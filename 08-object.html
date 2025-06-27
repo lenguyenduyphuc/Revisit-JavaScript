@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Functions</title>
+</head>
+
+<body>
+  <script>
+    const product = {
+      name: 'socks',
+      price: 1090,
+      user: {
+        rating: 4.5,
+        comments: 'This is wild'
+      },
+    };
+    console.log(product)
+
+    console.log(typeof JSON.stringify(product))
+    console.log(JSON.parse(JSON.stringify(product)))
+
+    const { name, price, user } = product
+    console.log(name)
+    console.log(user)
+  </script>
+</body>
+
+</html>
